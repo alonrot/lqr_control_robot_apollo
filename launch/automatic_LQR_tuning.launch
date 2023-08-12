@@ -1,0 +1,10 @@
+<launch>
+
+	<!-- Publish pole angle read from vicon -->
+	<include file="$(find pole_balancing_apollo)/launch/pole_angle_vicon.launch"/>
+
+	<!-- Display the pole in rviz -->
+	<node pkg="pole_balancing_apollo" name="publisher_pole_rviz_display" type="publisher_pole_rviz_display" output="screen" />
+	<node pkg="rviz" name="rviz" type="rviz" />
+
+</launch>

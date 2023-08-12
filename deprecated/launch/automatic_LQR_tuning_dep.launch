@@ -1,0 +1,17 @@
+<launch>
+
+	<!-- Global parameters -->
+	<arg name="config_file_publisher_LQRgains" default="config_publisher_LQRgains.yaml" />
+
+	<!-- Publish LQR gains -->
+	<node pkg="pole_balancing_apollo" name="publisher_LQRgains" type="publisher_LQRgains" 
+		output="screen" args="$(arg config_file_publisher_LQRgains)"/>
+
+	<!-- Publish pole angle read from vicon -->
+	<include file="$(find pole_balancing_apollo)/launch/pole_angle_vicon.launch"/>
+
+	<!-- Display the pole in rviz -->
+	<node pkg="pole_balancing_apollo" name="publisher_pole_rviz_display" type="publisher_pole_rviz_display" output="screen" />
+	<node pkg="rviz" name="rviz" type="rviz" />
+
+</launch>

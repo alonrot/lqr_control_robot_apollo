@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package>
+  <name>pole_balancing_apollo</name>
+  <version>1.0.0</version>
+  <description>pole_balancing_apollo</description>
+  <maintainer email="alonso.marco@tuebingen.mpg.de">Alonso Marco</maintainer>
+  <license>TODO</license>
+  <author email="alonso.marco@tuebingen.mpg.de">Alonso Marco</author>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>rosrt</build_depend>
+  <build_depend>rostest</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>apollo</build_depend>
+  <build_depend>sl</build_depend>
+  <build_depend>utilities</build_depend>
+  <build_depend>lwpr</build_depend>
+  <build_depend>vicon_subscriber</build_depend>
+  <build_depend>yaml_cpp</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>rosrt</run_depend>
+  <run_depend>rostest</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>apollo</run_depend>
+  <run_depend>sl</run_depend>
+  <run_depend>utilities</run_depend>
+  <run_depend>lwpr</run_depend>
+  <run_depend>vicon_subscriber</run_depend>
+  <run_depend>yaml_cpp</run_depend>
+
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export>
+  </export>
+</package>

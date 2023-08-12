@@ -1,0 +1,113 @@
+# Task options:
+sim_flag:             true                       # Simulation or real experiment?
+initial_angle_sim:    0.1                        # Initial pole angle (simulation only) [rad]
+initial_angle_vicon:  0.00                        # Initial pole angle (real system) [rad]
+duration_task:        36000                       # Total task time [s]
+u_sat:                3                           # End-effector's acceleration modulus [m/s2]
+
+# States-Machine Learning:
+duration_experiments: 45                           # Duration of each experiment [s]
+
+# Use a temporizer to start the task. Convenient if the computer keyboard is far away from the robot
+# as the pole has to be put upright manually.
+activate_temporizer: false
+temporizer_time: 20 # [s]
+
+# Set to zero the control input (debugging):
+set_control_input_to_zero: false
+
+# Data recording:
+record_data_standard: true # Data collection has to be stopped and saved manually
+record_data_for_learning: false
+
+# Vicon system:
+sign_conv:        1
+
+# Safety:
+state_space_box_limits:
+  - 0.044     # Pole angle limit [rad]
+  - 0.0       # PHID (not used)
+  - 0.29      # End-effector's position limit [m]
+  - 0.0       # SD (not used)
+  - 0.0       # INT_ (not used)
+endeff_acc_limits:         5 # End-effector's acceleration limit [m/s2]
+endeff_box_limits: # In the local frame
+  - 0.30 # Length (x)
+  - 0.10 # Width (y)
+  - 0.10 # Height (z)
+
+# Pole physical parameters:
+pole_length:          1.067
+pole_mass:            0.2903
+pole_center_of_mass:  0.636666256657899
+pole_inertia:         0.117671340663077
+pole_damping:         0.011603721783265
+
+# Pole points needed to draw it:
+pole_handle_height:     0.065
+pole_dist_bottom_ball:  0.525
+
+# Apollo interface:
+use_forg_factor:  false   # (default: false) Forgetting factor for the integrator part of the end-effector PID
+window_time:      5
+kp: 2000.0
+kd: 10.0
+ki: 100.0
+dbg_integrator:   false
+filter_order:     2
+filter_cutoff:    5
+use_head:       false
+
+# Estimate states:
+plane_angle_deg:     -30
+
+# 2nd-order Butterworth filter: [1] 1.0Hz    [2] 5.0Hz    [3] 10.0Hz    [4] 15.0Hz    [5] 20.0Hz
+which_filter_pole:  3                             # Filter for the pole states
+which_filter_xdd:   5                             # Filter for the end-effector acceleration
+integral_action:    true
+
+# Simulation:
+# sigma_n:        0.01 # Vicon (use 0.0 if no noise)
+sigma_n:        0.000051985 # Vicon (use 0.0 if no noise)
+vision_Ts:      5           # Vision system's sampling time: 5ms (VICON), 33ms (kinect), 16ms (kinect)
+VISION_LATENCY: 0
+ENDEFF_LATENCY: 0
+g_n:            9.81
+
+# Topic of LQR gains: safe controller
+topic_name_LQRsafe: "/LQRgains/safe"
+topic_id_LQRsafe: "/LQRgains/safe/id"
+id_LQRsafe: 10
+
+# Topic of LQR gains: search controller
+topic_name_LQRsearch: "/LQRgains/search"
+topic_id_LQRsearch: "/LQRgains/search/id"
+id_LQRsearch: 11
+
+# Robot alive:
+topic_robot_alive: /robot_alive
+node_robot_alive: Apollo_is_alive
+
+# Visualization:
+topic_name_pole_angle_visualization: "/pole_angle/visualization"
+topic_name_read_pole_angle_vicon: "/pole_angle/from_vicon"
+
+# Path to LQR empirical weights (computer-dependent):
+path2LQRweights_empirical: "/Network/Servers/wagner/Volumes/wagner/amarcovalle/popspace/src/userES_pubsub_lqr/config/apollo_pole_balancing/LQRgains.yaml"
+# path2LQRweights_empirical: "/home/alon/popspace/src/userES_pubsub_lqr/config/apollo_pole_balancing/LQRgains.yaml"
+heuristic_cost: 0.4
+
+# Dimensions:
+Nx: 5 # Number of system states (including integrator)
+Nu: 1 # Number of control inputs
+_NCART_: 3
+
+# Sinusoidal movement:
+f: 0.5        # Frecuency [Hz]
+amp_a: 0.05  # Amplitude [m/s2]
+
+# Which control:
+which_control: 1
+
+# States-Machine Learning:
+duration_experiments: 20                           # Duration of each experiment [s]

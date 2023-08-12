@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find vicon_bridge)/launch/vicon.launch"/>
+	<node pkg="pole_balancing_apollo" type="pole_angle_broadcast" name="pole_angle_broadcast"/>
+	<node pkg="pole_balancing_apollo" type="test_snatch_pole" name="test_snatch_pole"/>
+</launch>

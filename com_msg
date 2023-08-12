@@ -1,0 +1,4 @@
+Implemented auto-detection of external changes in the LQR_gains_search.cf file.
+At each SL iteration, the file is read, and its LQR controller is compared with
+the last set of LQR search gains. If they differ, then this set is updated with
+the gains on the file. 

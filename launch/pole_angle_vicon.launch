@@ -1,0 +1,21 @@
+<launch>
+
+	<!-- Global parameters -->
+	<arg name="node_name" 								default="vicon_node" 											/>
+	<arg name="topic_name_pole_angle" 		default="/pole_angle/from_vicon" 					/>
+	<arg name="topic_name_vtracker_base" 	default="/vicon/apollo_base/apollo_base" 	/>
+	<arg name="topic_name_vtracker_pole" 	default="/vicon/apollo_pole/apollo_pole" 	/>
+	<arg name="looping_rate" 							default="200" 														/>
+
+	<!-- Launch node -->
+	<include file="$(find vicon_bridge)/launch/vicon.launch"/>
+	<node pkg="pole_balancing_apollo" type="publisher_pole_angle_vicon" 
+				name="publisher_pole_angle_vicon" output="screen" 
+				args="$(arg node_name)
+							$(arg topic_name_pole_angle) 
+							$(arg topic_name_vtracker_base) 
+							$(arg topic_name_vtracker_pole) 
+							$(arg looping_rate) ">
+	</node>
+
+</launch>

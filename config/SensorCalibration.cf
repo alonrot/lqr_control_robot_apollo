@@ -1,0 +1,62 @@
+/* this file contains the specification such that all linear actuators
+   and encoders can be represented as torque and rad values.
+   Note: the file is parsed according to keywords, after the keyword,
+         the values need to come in the correct sequence */
+
+/* format: keyword, 
+           linear sensor (1/0), 
+           linear actuator (1/0),
+           linear load cell (1/0), 
+           moment arm, 
+           length from attachement of linear actuator to joint axis 
+	   (every linear value is in meters), 
+           polarity of position sensor (1/-1),
+           polarity of load (1/-1)
+*/
+
+
+  R_SFE   0  0  0 0  0  1 1
+  R_SAA   0  0  0 0  0  1 1
+  R_HR    0  0  0 0  0  1 1
+  R_EB    0  0  0 0  0  1 1
+  R_WR    0  0  0 0  0  1 1
+  R_WFE   0  0  0 0  0  1 1
+  R_WAA   0  0  0 0  0  1 1
+
+  R_FR   0  0  0 0  0  1 1  
+  R_MF   0  0  0 0  0  1 1  
+  R_RF   0  0  0 0  0  1 1  
+  R_LF   0  0  0 0  0  1 1  
+
+  L_SFE   0  0  0 0  0  1 -1
+  L_SAA   0  0  0 0  0  1 -1
+  L_HR    0  0  0 0  0  1 -1
+  L_EB    0  0  0 0  0  1 -1
+  L_WR    0  0  0 0  0  1 -1
+  L_WFE   0  0  0 0  0  1 -1
+  L_WAA   0  0  0 0  0  1 -1
+
+  L_FR   0  0  0 0  0  1 1  
+  L_MF   0  0  0 0  0  1 1  
+  L_RF   0  0  0 0  0  1 1  
+  L_LF   0  0  0 0  0  1 1  
+
+  B_HN   0  0  0 0  0  1 1
+  B_HT   0  0  0 0  0  1 1
+  B_HR   0  0  0 0  0  1 1
+
+  L_EP   0  0  0 0  0  1 1
+  L_ET   0  0  0 0  0  1 1
+  R_EP   0  0  0 0  0  1 1
+  R_ET   0  0  0 0  0  1 1
+
+
+
+
+
+
+
+
+
+
+

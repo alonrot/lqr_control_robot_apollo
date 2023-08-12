@@ -1,0 +1,9 @@
+test_str: test
+test_double: 0.1
+gains:
+  - 1
+  - 0.1
+  - 0.01
+test_bool: true
+test_float: 0.2
+test_int: 1

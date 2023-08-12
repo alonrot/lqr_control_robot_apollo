@@ -1,0 +1,280 @@
+/* this file contains the filter specifications for all sensory data.
+   For each DOF, cutoff frequency in % of the Nyquist frequency for a
+   second order butterworth filter are given */
+   Note: the file is parsed according to keywords, after the keyword,
+         the values need to come in the correct sequence */
+
+/* format: keyword, cutoff th, cutoff thd, cutoff thdd, cutoff load  */
+
+  R_SFE   10 10 10 10
+  R_SAA   10 10 10 10
+  R_HR    10 10 10 10
+  R_EB    10 10 10 10
+  R_WR    10 10 10 10
+  R_WFE   10 10 10 10
+  R_WAA   10 10 10 10
+
+  L_SFE   10 10 10 10
+  L_SAA   10 10 10 10
+  L_HR    10 10 10 10
+  L_EB    10 10 10 10
+  L_WR    10 10 10 10
+  L_WFE   10 10 10 10
+  L_WAA   10 10 10 10
+
+  B_HN   5 5 5 5
+  B_HT   5 5 5 5
+  B_HR   5 5 5 5
+
+  L_EP   5 5 5 5
+  L_ET   5 5 5 5
+  R_EP   5 5 5 5
+  R_ET   5 5 5 5
+
+  R_FR   100 100 100 100
+  R_MF   100 100 100 100
+  R_RF   100 100 100 100
+  R_LF   100 100 100 100
+
+  L_FR   100 100 100 100
+  L_MF   100 100 100 100
+  L_RF   100 100 100 100
+  L_LF   100 100 100 100
+
+  R_LC_FX       100
+  R_LC_FY       100
+  R_LC_FZ       100
+  R_LC_MX       100
+  R_LC_MY       100
+  R_LC_MZ       100
+
+  R_RF_2ND       100
+  R_MF_2ND       100
+  R_LF_2ND       100
+  
+  R_RF_SG       100
+  R_MF_SG       100
+  R_LF_SG       100
+
+  R_RF_SG         100
+  R_MF_SG         100
+  R_LF_SG         100
+
+  R_RF_TS11       100
+  R_RF_TS12       100
+  R_RF_TS13       100
+  R_RF_TS14       100
+  R_RF_TS15       100
+  R_RF_TS16       100
+  R_RF_TS17       100
+  R_RF_TS18       100
+  R_RF_TS21       100
+  R_RF_TS22       100
+  R_RF_TS23       100
+  R_RF_TS24       100
+  R_RF_TS25       100
+  R_RF_TS26       100
+  R_RF_TS27       100
+  R_RF_TS28       100
+  R_RF_TS31       100
+  R_RF_TS32       100
+  R_RF_TS33       100
+  R_RF_TS34       100
+  R_RF_TS35       100
+  R_RF_TS36       100
+  R_RF_TS37       100
+  R_RF_TS38       100
+  
+  R_MF_TS11       100
+  R_MF_TS12       100
+  R_MF_TS13       100
+  R_MF_TS14       100
+  R_MF_TS15       100
+  R_MF_TS16       100
+  R_MF_TS17       100
+  R_MF_TS18       100
+  R_MF_TS21       100
+  R_MF_TS22       100
+  R_MF_TS23       100
+  R_MF_TS24       100
+  R_MF_TS25       100
+  R_MF_TS26       100
+  R_MF_TS27       100
+  R_MF_TS28       100
+  R_MF_TS31       100
+  R_MF_TS32       100
+  R_MF_TS33       100
+  R_MF_TS34       100
+  R_MF_TS35       100
+  R_MF_TS36       100
+  R_MF_TS37       100
+  R_MF_TS38       100
+  
+  R_LF_TS11       100
+  R_LF_TS12       100
+  R_LF_TS13       100
+  R_LF_TS14       100
+  R_LF_TS15       100
+  R_LF_TS16       100
+  R_LF_TS17       100
+  R_LF_TS18       100
+  R_LF_TS21       100
+  R_LF_TS22       100
+  R_LF_TS23       100
+  R_LF_TS24       100
+  R_LF_TS25       100
+  R_LF_TS26       100
+  R_LF_TS27       100
+  R_LF_TS28       100
+  R_LF_TS31       100
+  R_LF_TS32       100
+  R_LF_TS33       100
+  R_LF_TS34       100
+  R_LF_TS35       100
+  R_LF_TS36       100
+  R_LF_TS37       100
+  R_LF_TS38       100
+  
+  R_PALM_TS11       100
+  R_PALM_TS12       100
+  R_PALM_TS13       100
+  R_PALM_TS14       100
+  R_PALM_TS15       100
+  R_PALM_TS16       100
+  R_PALM_TS21       100
+  R_PALM_TS22       100
+  R_PALM_TS23       100
+  R_PALM_TS24       100
+  R_PALM_TS25       100
+  R_PALM_TS26       100
+  R_PALM_TS31       100
+  R_PALM_TS32       100
+  R_PALM_TS33       100
+  R_PALM_TS34       100
+  R_PALM_TS35       100
+  R_PALM_TS36       100
+  R_PALM_TS41       100
+  R_PALM_TS42       100
+  R_PALM_TS43       100
+  R_PALM_TS44       100
+  R_PALM_TS45       100
+  R_PALM_TS46       100
+
+  L_LC_FX       100
+  L_LC_FY       100
+  L_LC_FZ       100
+  L_LC_MX       100
+  L_LC_MY       100
+  L_LC_MZ       100
+
+  L_RF_2ND       100
+  L_MF_2ND       100
+  L_LF_2ND       100
+  
+  L_RF_SG       100
+  L_MF_SG       100
+  L_LF_SG       100
+
+  L_RF_SG         100
+  L_MF_SG         100
+  L_LF_SG         100
+
+  L_RF_TS11       100
+  L_RF_TS12       100
+  L_RF_TS13       100
+  L_RF_TS14       100
+  L_RF_TS15       100
+  L_RF_TS16       100
+  L_RF_TS17       100
+  L_RF_TS18       100
+  L_RF_TS21       100
+  L_RF_TS22       100
+  L_RF_TS23       100
+  L_RF_TS24       100
+  L_RF_TS25       100
+  L_RF_TS26       100
+  L_RF_TS27       100
+  L_RF_TS28       100
+  L_RF_TS31       100
+  L_RF_TS32       100
+  L_RF_TS33       100
+  L_RF_TS34       100
+  L_RF_TS35       100
+  L_RF_TS36       100
+  L_RF_TS37       100
+  L_RF_TS38       100
+  
+  L_MF_TS11       100
+  L_MF_TS12       100
+  L_MF_TS13       100
+  L_MF_TS14       100
+  L_MF_TS15       100
+  L_MF_TS16       100
+  L_MF_TS17       100
+  L_MF_TS18       100
+  L_MF_TS21       100
+  L_MF_TS22       100
+  L_MF_TS23       100
+  L_MF_TS24       100
+  L_MF_TS25       100
+  L_MF_TS26       100
+  L_MF_TS27       100
+  L_MF_TS28       100
+  L_MF_TS31       100
+  L_MF_TS32       100
+  L_MF_TS33       100
+  L_MF_TS34       100
+  L_MF_TS35       100
+  L_MF_TS36       100
+  L_MF_TS37       100
+  L_MF_TS38       100
+  
+  L_LF_TS11       100
+  L_LF_TS12       100
+  L_LF_TS13       100
+  L_LF_TS14       100
+  L_LF_TS15       100
+  L_LF_TS16       100
+  L_LF_TS17       100
+  L_LF_TS18       100
+  L_LF_TS21       100
+  L_LF_TS22       100
+  L_LF_TS23       100
+  L_LF_TS24       100
+  L_LF_TS25       100
+  L_LF_TS26       100
+  L_LF_TS27       100
+  L_LF_TS28       100
+  L_LF_TS31       100
+  L_LF_TS32       100
+  L_LF_TS33       100
+  L_LF_TS34       100
+  L_LF_TS35       100
+  L_LF_TS36       100
+  L_LF_TS37       100
+  L_LF_TS38       100
+  
+  L_PALM_TS11       100
+  L_PALM_TS12       100
+  L_PALM_TS13       100
+  L_PALM_TS14       100
+  L_PALM_TS15       100
+  L_PALM_TS16       100
+  L_PALM_TS21       100
+  L_PALM_TS22       100
+  L_PALM_TS23       100
+  L_PALM_TS24       100
+  L_PALM_TS25       100
+  L_PALM_TS26       100
+  L_PALM_TS31       100
+  L_PALM_TS32       100
+  L_PALM_TS33       100
+  L_PALM_TS34       100
+  L_PALM_TS35       100
+  L_PALM_TS36       100
+  L_PALM_TS41       100
+  L_PALM_TS42       100
+  L_PALM_TS43       100
+  L_PALM_TS44       100
+  L_PALM_TS45       100
+  L_PALM_TS46       100

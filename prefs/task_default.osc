@@ -1,0 +1,80 @@
+# R_SFE_th		1
+# R_SAA_th		1
+# R_HR_th		1
+# R_EB_th		1
+# R_WR_th		1
+# R_WFE_th		1
+ R_WAA_th		1
+
+# R_SFE_des_th		1
+# R_SAA_des_th		1
+# R_HR_des_th		1
+# R_EB_des_th		1
+# R_WR_des_th		1
+# R_WFE_des_th		1
+ R_WAA_des_th		1
+
+# R_SFE_thd		2
+# R_SAA_thd		2
+# R_HR_thd		2
+# R_EB_thd		2
+# R_WR_thd		2
+# R_WFE_thd		2
+ R_WAA_thd		2
+
+# R_SFE_des_thd		2
+# R_SAA_des_thd		2
+# R_HR_des_thd		2
+# R_EB_des_thd		2
+# R_WR_des_thd		2
+# R_WFE_des_thd		2
+ R_WAA_des_thd		2
+
+#R_SFE_u		3
+# R_SAA_u		3
+# R_HR_u		3
+# R_EB_u		3
+# R_WR_u		3
+# R_WFE_u		3
+ R_WAA_u		3
+
+#R_SFE_load		3
+# R_SAA_load		3
+# R_HR_load		3
+# R_EB_load		3
+# R_WR_load		3
+# R_WFE_load		3
+ R_WAA_load		3
+
+
+# R_SFE_u		4
+# R_SAA_u		4
+# R_HR_u		4
+ R_EB_u		4
+# R_WR_u		4
+# R_WFE_u		4
+# R_WAA_u		4
+
+# R_SFE_uff		4
+# R_SAA_uff		4
+# R_HR_uff		4
+ R_EB_uff		4
+# R_WR_uff		4
+# R_WFE_uff		4
+#  R_WAA_uff		4
+
+# R_SFE_ufb		4
+# R_SAA_ufb		4
+# R_HR_ufb		4
+# R_EB_ufb		4
+# R_WR_ufb		4
+# R_WFE_ufb		4
+#  R_WAA_ufb		4
+
+# R_SFE_est_gravity		4
+# R_SAA_est_gravity		4
+# R_HR_est_gravity		4
+ R_EB_est_gravity		4
+# R_WR_est_gravity		4
+# R_WFE_est_gravity		4
+#  R_WAA_est_gravity		4

@@ -1,0 +1,258 @@
+/* This file specifies the contacts that should be checked. All contacts are lines between two 
+   links of the robot. Each line in the file specifies one contact line with the following specs:
+
+   start_link end_link active n_check start_cond  end_cond
+
+   start_link: name of the start link of the line
+   end_link  : name of the end link of the line
+   active    : 0 or 1 for non-active or active
+   n_checks  : number of check points between start and and point
+   start_cond: 
+   end_cond  : can be "full", "half", or "orth". 
+
+               full: contact forces in all direction are permissible
+               half: contact forces in the half space including the line are permissible. The space
+                     is terminated by the plane perpendicular to the line which includes the start
+		     (or end) point
+               orth: contact forces orthogonal to the line are permitted
+
+   Note that C/C++-style comments are permitted and will be stripped. ':',';','=' are stripped, too.
+
+*/
+
+R_SFE_LINK	R_SAA_LINK	1	5	half	orth
+R_SAA_LINK 	R_HR_LINK	1	5	orth	orth
+R_HR_LINK	R_EB_LINK	1	5	orth	orth
+R_EB_LINK	R_WR_LINK	1	5	orth	orth
+R_WR_LINK	R_WFE_LINK	1	5	orth	orth
+R_WFE_LINK	R_WAA_LINK	1	5	orth	orth
+R_WAA_LINK	R_PALM		1	2	orth	half
+
+L_SFE_LINK	L_SAA_LINK	1	5	half	orth
+L_SAA_LINK 	L_HR_LINK	1	5	orth	orth
+L_HR_LINK	L_EB_LINK	1	5	orth	orth
+L_EB_LINK	L_WR_LINK	1	5	orth	orth
+L_WR_LINK	L_WFE_LINK	1	5	orth	orth
+L_WFE_LINK	L_WAA_LINK	1	5	orth	orth
+L_WAA_LINK	L_PALM		1	2	orth	half
+
+R_PALM		R_RFAXIS	1	2	orth	orth
+R_RFAXIS	R_RF1ST		1	5	orth	orth
+R_RF1ST		R_RF2ND		1	2	orth	half
+R_PALM		R_LFAXIS	1	2	orth	orth
+R_LFAXIS	R_LF1ST		1	5	orth	orth
+R_LF1ST		R_LF2ND		1	2	orth	half
+R_PALM		R_MFAXIS	1	2	orth 	orth
+R_MFAXIS	R_MF1ST		1	5	orth	orth
+R_MF1ST		R_MF2ND		1	2	orth	half
+
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0305  0.0080   0.0000 -0.0454  0.9990
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0305  0.0080   0.0000 -0.0454  0.9990
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+R_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0000  0.0015   0.0000  0.9191  0.3939
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0010  0.0035   0.0000  0.7593  0.6508
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0030  0.0050   0.0000  0.3162  0.9487
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0085  0.0060   0.0000  0.1351  0.9908
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0140  0.0065   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0195  0.0070   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0250  0.0075   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0305  0.0080   0.0000  0.0454  0.9990
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0000  0.0015   0.0000  0.9191  0.3939
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0010  0.0035   0.0000  0.7593  0.6508
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0030  0.0050   0.0000  0.3162  0.9487
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0085  0.0060   0.0000  0.1351  0.9908
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0140  0.0065   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0195  0.0070   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0250  0.0075   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0305  0.0080   0.0000  0.0454  0.9990
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0000  0.0015   0.0000  0.9191  0.3939
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0010  0.0035   0.0000  0.7593  0.6508
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0030  0.0050   0.0000  0.3162  0.9487
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0085  0.0060   0.0000  0.1351  0.9908
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0140  0.0065   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0195  0.0070   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0250  0.0075   0.0000  0.0905  0.9959
+R_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0305  0.0080   0.0000  0.0454  0.9990
+
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0250  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0050  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0150  0.0000   0.0000  0.0000  1.0000
+R_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0250  0.0000   0.0000  0.0000  1.0000
+
+L_PALM		L_RFAXIS	1	2	orth	orth
+L_RFAXIS	L_RF1ST		1	5	orth	orth
+L_RF1ST		L_RF2ND		1	2	orth	half
+L_PALM		L_LFAXIS	1	2	orth	orth
+L_LFAXIS	L_LF1ST		1	5	orth	orth
+L_LF1ST		L_LF2ND		1	2	orth	half
+L_PALM		L_MFAXIS	1	2	orth 	orth
+L_MFAXIS	L_MF1ST		1	5	orth	orth
+L_MF1ST		L_MF2ND		1	2	orth	half
+
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0305  0.0080   0.0000 -0.0454  0.9990
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_RF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0000  0.0305  0.0080   0.0000 -0.0454  0.9990
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0000  0.0015   0.0000 -0.9191  0.3939
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0010  0.0035   0.0000 -0.7593  0.6508
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0030  0.0050   0.0000 -0.3162  0.9487
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0085  0.0060   0.0000 -0.1351  0.9908
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0140  0.0065   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0195  0.0070   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0075   0.0000 -0.0905  0.9959
+L_LF2ND    POINT_CONTACT   1   1  half  not_used   0.0050  0.0305  0.0080   0.0000 -0.0454  0.9990
+
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0000  0.0015   0.0000  0.9191  0.3939
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0010  0.0035   0.0000  0.7593  0.6508
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0030  0.0050   0.0000  0.3162  0.9487
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0085  0.0060   0.0000  0.1351  0.9908
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0140  0.0065   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0195  0.0070   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0250  0.0075   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0305  0.0080   0.0000  0.0454  0.9990
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0000  0.0015   0.0000  0.9191  0.3939
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0010  0.0035   0.0000  0.7593  0.6508
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0030  0.0050   0.0000  0.3162  0.9487
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0085  0.0060   0.0000  0.1351  0.9908
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0140  0.0065   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0195  0.0070   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0250  0.0075   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0000 -0.0305  0.0080   0.0000  0.0454  0.9990
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0000  0.0015   0.0000  0.9191  0.3939
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0010  0.0035   0.0000  0.7593  0.6508
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0030  0.0050   0.0000  0.3162  0.9487
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0085  0.0060   0.0000  0.1351  0.9908
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0140  0.0065   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0195  0.0070   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0250  0.0075   0.0000  0.0905  0.9959
+L_MF2ND    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0305  0.0080   0.0000  0.0454  0.9990
+
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150  0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0150 -0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050  0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used   0.0050 -0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050  0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0050 -0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0250  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150  0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0050  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0150  0.0000   0.0000  0.0000  1.0000
+L_PALM    POINT_CONTACT   1   1  half  not_used  -0.0150 -0.0250  0.0000   0.0000  0.0000  1.0000
+

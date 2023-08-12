@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="pole_balancing_apollo" type="pole_angle_broadcast_test" name="pole_angle_broadcast_test"/>
+</launch>

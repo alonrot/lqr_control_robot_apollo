@@ -1,0 +1,30 @@
+R_FR_th		1
+R_RF_th		1
+R_MF_th		1
+R_LF_th		1
+
+L_FR_th		1
+L_RF_th		1
+L_MF_th		1
+L_LF_th		1
+
+R_FR_u		2
+R_RF_u		2
+R_MF_u		2
+R_LF_u		2
+
+L_FR_u		2
+L_RF_u		2
+L_MF_u		2
+L_LF_u		2
+
+R_FR_load	3
+R_RF_load	3
+R_MF_load	3
+R_LF_load	3
+
+L_FR_load	3
+L_RF_load	3
+L_MF_load	3
+L_LF_load	3
+

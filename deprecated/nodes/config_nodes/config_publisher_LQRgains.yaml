@@ -1,0 +1,7 @@
+file_LQRsafe:       "LQR_gains_safe.cf"
+file_LQRsearch:     "LQR_gains_search.cf"
+node_name:          "LQR_gains_broadcast"
+topic_name_safe:    "/LQRgains/safe"
+topic_name_search:  "/LQRgains/search"
+n_gains_safe:       5
+n_gains_search:     5
